@@ -232,6 +232,7 @@ public class NewJFrame extends javax.swing.JFrame {
         case "-" :
                 result= firstnum - secondnum;
 		answer = String.format("%.0f", result) ;
+                
 		jTextField1.setText(answer);					
 		break;
         }

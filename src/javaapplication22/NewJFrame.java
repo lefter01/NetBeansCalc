@@ -138,7 +138,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 75, -1));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 80, -1));
 
         jButton12.setText("=");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +165,15 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton14ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 60, -1));
+        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 40, -1));
+
+        jButton15.setText(".");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 40, -1));
 
         jButton15.setText("^");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -235,12 +243,12 @@ public class NewJFrame extends javax.swing.JFrame {
 	{
 	case "+" :
 		result= firstnum + secondnum;
-		answer = String.format("%.0f", result) ;
-		jTextField1.setText(answer);					
-		break;
+		answer = Double.toString(result) ;
+		jTextField1.setText(answer);
+ 		break;
         case "-" :
                 result= firstnum - secondnum;
-		answer = String.format("%.0f", result) ;
+		answer = Double.toString(result) ;
                 
 		jTextField1.setText(answer);					
 		break;
@@ -272,9 +280,13 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+
         firstnum = Double.parseDouble(jTextField1.getText());
 				jTextField1.setText("");
 				operation = "^";
+
+        
+
     }//GEN-LAST:event_jButton15ActionPerformed
 
     /**

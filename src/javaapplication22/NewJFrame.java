@@ -50,6 +50,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -151,7 +152,7 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 339, -1));
 
         jTextField1.setEditable(false);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 20, 81, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 20, 130, -1));
 
         jButton13.setText("C");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -159,7 +160,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
+        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 70, 40));
 
         jButton14.setLabel("-");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -167,7 +168,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton14ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 40, -1));
+        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 60, -1));
 
         jButton15.setText(".");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +176,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton15ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 40, -1));
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 60, -1));
 
         jButton16.setText("^");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -183,7 +184,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton15ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
+        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, 60, -1));
 
         jButton17.setText("/");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
@@ -191,7 +192,15 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton17ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 50, 20));
+        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 60, -1));
+
+        jButton18.setText("sqrt");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 60, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -248,32 +257,39 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         String answer ;
-	secondnum=Double.parseDouble(jTextField1.getText());
 	switch (operation)
 	{
 	case "+" :
+                secondnum=Double.parseDouble(jTextField1.getText());
 		result= firstnum + secondnum;
 		answer = Double.toString(result) ;
 		jTextField1.setText(answer);
  		break;
         case "-" :
+                secondnum=Double.parseDouble(jTextField1.getText());
                 result= firstnum - secondnum;
 		answer = Double.toString(result) ;
                 
 		jTextField1.setText(answer);					
 		break;
-         case "^" :             
+         case "^" :    
+                secondnum=Double.parseDouble(jTextField1.getText());
                 result= Math.pow(firstnum,secondnum)   ;
 		answer = Double.toString(result) ;
 		jTextField1.setText(answer);					
 		break; 
          case "/" :
+                secondnum=Double.parseDouble(jTextField1.getText());
                 result= firstnum / secondnum;
 		answer = Double.toString(result) ;
                 
 		jTextField1.setText(answer);					
 		break;
-             
+         case "sqrt" :
+                result= Math.sqrt (firstnum) ;
+                answer = Double.toString (result) ;
+                jTextField1.setText(answer);
+                break;
         }
     }//GEN-LAST:event_jButton12ActionPerformed
 
@@ -308,6 +324,12 @@ public class NewJFrame extends javax.swing.JFrame {
         jTextField1.setText("");
         operation = "/";
     }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        firstnum = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        operation = "sqrt";
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -354,6 +376,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

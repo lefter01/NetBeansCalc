@@ -10,7 +10,7 @@ package javaapplication22;
  * @author WorkSpace
  */
 public class NewJFrame extends javax.swing.JFrame {
-
+//bubolbo
     double firstnum;
     double secondnum;
     double result;

@@ -225,12 +225,12 @@ public class NewJFrame extends javax.swing.JFrame {
 	{
 	case "+" :
 		result= firstnum + secondnum;
-		answer = Double.toString(result) ;
+		answer = String.format("%.0f", result) ;
 		jTextField1.setText(answer);					
 		break;
         case "-" :
                 result= firstnum - secondnum;
-		answer = Double.toString(result) ;
+		answer = String.format("%.0f", result) ;
 		jTextField1.setText(answer);					
 		break;
         }

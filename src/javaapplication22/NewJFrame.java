@@ -47,6 +47,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -166,6 +167,14 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 60, -1));
 
+        jButton15.setText("^");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -234,6 +243,14 @@ public class NewJFrame extends javax.swing.JFrame {
 		answer = Double.toString(result) ;
 		jTextField1.setText(answer);					
 		break;
+         case "^" :
+              
+              
+                result= Math.pow(firstnum,secondnum)   ;
+		answer = Double.toString(result) ;
+		jTextField1.setText(answer);					
+		break; 
+             
         }
     }//GEN-LAST:event_jButton12ActionPerformed
 
@@ -252,6 +269,12 @@ public class NewJFrame extends javax.swing.JFrame {
 				jTextField1.setText("");
 				operation = "-";
     }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        firstnum = Double.parseDouble(jTextField1.getText());
+				jTextField1.setText("");
+				operation = "^";
+    }//GEN-LAST:event_jButton15ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -295,6 +318,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

@@ -252,9 +252,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 
 		jTextField1.setText(answer);					
 		break;
-         case "^" :
-              
-              
+         case "^" :             
                 result= Math.pow(firstnum,secondnum)   ;
 		answer = Double.toString(result) ;
 		jTextField1.setText(answer);					

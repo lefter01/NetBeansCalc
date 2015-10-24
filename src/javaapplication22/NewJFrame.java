@@ -47,6 +47,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -137,7 +138,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 75, -1));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 80, -1));
 
         jButton12.setText("=");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +165,15 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton14ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 60, -1));
+        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 40, -1));
+
+        jButton15.setText(".");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 40, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -226,12 +235,12 @@ public class NewJFrame extends javax.swing.JFrame {
 	{
 	case "+" :
 		result= firstnum + secondnum;
-		answer = String.format("%.0f", result) ;
-		jTextField1.setText(answer);					
-		break;
+		answer = Double.toString(result) ;
+		jTextField1.setText(answer);
+ 		break;
         case "-" :
                 result= firstnum - secondnum;
-		answer = String.format("%.0f", result) ;
+		answer = Double.toString(result) ;
                 
 		jTextField1.setText(answer);					
 		break;
@@ -253,6 +262,11 @@ public class NewJFrame extends javax.swing.JFrame {
 				jTextField1.setText("");
 				operation = "-";
     }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        String textin = jTextField1.getText()+jButton15.getText();
+				jTextField1.setText(textin);
+    }//GEN-LAST:event_jButton15ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -296,6 +310,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

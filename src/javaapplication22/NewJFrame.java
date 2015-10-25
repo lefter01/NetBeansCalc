@@ -487,7 +487,7 @@ public class NewJFrame extends javax.swing.JFrame {
         result= Math.sin(firstnum);
         jtextfield1.setText(Double.toString(result));
     }//GEN-LAST:event_sinActionPerformed
-//cos
+//cos function 
     private void cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosActionPerformed
         firstnum = Double.parseDouble(jtextfield1.getText());
         result= Math.cos(firstnum);

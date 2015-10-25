@@ -163,14 +163,14 @@ public class NewJFrame extends javax.swing.JFrame {
         point.setText(".");
         point.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pointActionPerformed(evt);
+                pointActionPerformed1(evt);
             }
         });
 
         power.setText("x^n");
         power.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pointActionPerformed(evt);
+                powerActionPerformed(evt);
             }
         });
 
@@ -449,12 +449,12 @@ public class NewJFrame extends javax.swing.JFrame {
 	operation = "-";
     }//GEN-LAST:event_minusActionPerformed
 
-    private void pointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pointActionPerformed
+    private void powerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_powerActionPerformed
 
         firstnum = Double.parseDouble(jtextfield1.getText());
 	jtextfield1.setText("");
 	operation = "^";      
-    }//GEN-LAST:event_pointActionPerformed
+    }//GEN-LAST:event_powerActionPerformed
 
     private void divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideActionPerformed
         firstnum = Double.parseDouble(jtextfield1.getText());
@@ -493,6 +493,11 @@ public class NewJFrame extends javax.swing.JFrame {
         result= Math.cos(firstnum);
         jtextfield1.setText(Double.toString(result));
     }//GEN-LAST:event_cosActionPerformed
+
+    private void pointActionPerformed1(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pointActionPerformed1
+        String textin = jtextfield1.getText()+point.getText();
+				jtextfield1.setText(textin);
+    }//GEN-LAST:event_pointActionPerformed1
 
     /**
      * @param args the command line arguments

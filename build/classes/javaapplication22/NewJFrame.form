@@ -292,7 +292,7 @@
         <Property name="text" type="java.lang.String" value="."/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pointActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pointActionPerformed1"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="power">
@@ -300,7 +300,7 @@
         <Property name="text" type="java.lang.String" value="x^n"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pointActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="powerActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="divide">

@@ -8,7 +8,7 @@ package javaapplication22;
 
 /**
  *
- * @author WorkSpace
+ * @author WorkSpace//testing
  */
 public class NewJFrame extends javax.swing.JFrame {
 //bubolbo

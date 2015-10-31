@@ -32,5 +32,11 @@ public class Calculator {
     double Sqrt(double x){
         return Math.sqrt(x);
     }
+    double Pi(){
+        return Math.PI;
+    }
+    double Exp(double x){
+        return Math.exp(x);
+    }
    
 }

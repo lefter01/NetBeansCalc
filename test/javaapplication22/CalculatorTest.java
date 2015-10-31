@@ -110,6 +110,35 @@ public class CalculatorTest {
         assertEquals(expResult,result,0.0);
         
     }
+    /**
+     * Test of Pi method, of class Calculator.
+     */
+    @Test
+    public void testPi() {
+        System.out.println("Pi");
+        double expResult = 3.141592653589793;
+        double result =Math.PI;
+        
+        assertEquals(expResult, result, 0);
+    }
+    /**
+     * Test of Exp method, of class Calculator.
+     */
+    @Test
+    public void testExp() {
+        System.out.println("Exp");
+        double x = 1;
+        double expResult = 2.718281828459045;
+        double result = Math.exp(x);
+        
+        assertEquals(expResult, result, 0.0);
+        
+        x = -0;
+        expResult = 1.0;
+        result = Math.exp(x);
+        
+        assertEquals(expResult, result, 0);
+    }
     
 }
 

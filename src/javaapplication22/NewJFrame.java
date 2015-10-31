@@ -433,7 +433,17 @@ public class NewJFrame extends javax.swing.JFrame {
                 result= (firstnum * secondnum)/100;
 		answer = Double.toString(result) ;                
 		jtextfield1.setText(answer);					
-		break;        
+		break;   
+         case "pi" :
+                result=calc.Pi();
+                answer = Double.toString(result);
+                jtextfield1.setText(answer);
+                break;
+         case "exp" :
+                result=calc.Exp(firstnum);
+                answer = Double.toString(result) ;                
+		jtextfield1.setText(answer);
+                break;
         }
     }//GEN-LAST:event_equalActionPerformed
 
@@ -523,8 +533,8 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void expActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expActionPerformed
         firstnum = Double.parseDouble(jtextfield1.getText());
-        result= Math.exp(firstnum);
-        jtextfield1.setText(Double.toString(result));
+        jtextfield1.setText("");
+        operation = "exp";
     }//GEN-LAST:event_expActionPerformed
 
     private void ntekakaintunamhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ntekakaintunamhActionPerformed
@@ -534,8 +544,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_ntekakaintunamhActionPerformed
 
     private void piActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_piActionPerformed
-        result= Math.PI;
-        jtextfield1.setText(Double.toString(result));
+        operation = "pi";
     }//GEN-LAST:event_piActionPerformed
 
     private void multiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiActionPerformed

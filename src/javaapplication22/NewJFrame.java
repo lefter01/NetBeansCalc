@@ -66,6 +66,10 @@ public class NewJFrame extends javax.swing.JFrame {
         ntekakaintunamh = new javax.swing.JButton();
         pi = new javax.swing.JButton();
         multi = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -76,7 +80,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 oneActionPerformed(evt);
             }
         });
-        getContentPane().add(one, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 50, 30));
+        getContentPane().add(one, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 50, 30));
 
         two.setText("2");
         two.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +88,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 twoActionPerformed(evt);
             }
         });
-        getContentPane().add(two, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 50, 30));
+        getContentPane().add(two, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 50, 30));
 
         three.setText("3");
         three.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +96,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 threeActionPerformed(evt);
             }
         });
-        getContentPane().add(three, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 50, 30));
+        getContentPane().add(three, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 50, 30));
 
         four.setText("4");
         four.addActionListener(new java.awt.event.ActionListener() {
@@ -100,7 +104,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 fourActionPerformed(evt);
             }
         });
-        getContentPane().add(four, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 50, 30));
+        getContentPane().add(four, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 50, 30));
 
         five.setText("5");
         five.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +112,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 fiveActionPerformed(evt);
             }
         });
-        getContentPane().add(five, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 50, 30));
+        getContentPane().add(five, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 50, 30));
 
         six.setText("6");
         six.addActionListener(new java.awt.event.ActionListener() {
@@ -116,7 +120,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 sixActionPerformed(evt);
             }
         });
-        getContentPane().add(six, new org.netbeans.lib.awtextra.AbsoluteConstraints(318, 140, 50, 30));
+        getContentPane().add(six, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 190, 50, 30));
 
         seven.setText("7");
         seven.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +128,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 sevenActionPerformed(evt);
             }
         });
-        getContentPane().add(seven, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 50, 30));
+        getContentPane().add(seven, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 50, 30));
 
         eight.setText("8");
         eight.addActionListener(new java.awt.event.ActionListener() {
@@ -132,7 +136,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 eightActionPerformed(evt);
             }
         });
-        getContentPane().add(eight, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 50, 30));
+        getContentPane().add(eight, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 50, 30));
 
         nine.setText("9");
         nine.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +144,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 nineActionPerformed(evt);
             }
         });
-        getContentPane().add(nine, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 50, 30));
+        getContentPane().add(nine, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 50, 30));
 
         zero.setText("0");
         zero.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +152,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 zeroActionPerformed(evt);
             }
         });
-        getContentPane().add(zero, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 218, 50, 30));
+        getContentPane().add(zero, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 50, 30));
 
         plus.setText("+");
         plus.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +160,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 plusActionPerformed(evt);
             }
         });
-        getContentPane().add(plus, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 60, 20));
+        getContentPane().add(plus, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 50, 20));
 
         equal.setText("=");
         equal.addActionListener(new java.awt.event.ActionListener() {
@@ -164,11 +168,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 equalActionPerformed(evt);
             }
         });
-        getContentPane().add(equal, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 258, 130, 50));
+        getContentPane().add(equal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 50, 30));
 
         jtextfield1.setEditable(false);
         jtextfield1.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(jtextfield1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 190, 30));
+        getContentPane().add(jtextfield1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 190, 30));
 
         clear.setText("C");
         clear.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +180,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 clearActionPerformed(evt);
             }
         });
-        getContentPane().add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 218, 50, 90));
+        getContentPane().add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 60, 70));
 
         minus.setLabel("-");
         minus.addActionListener(new java.awt.event.ActionListener() {
@@ -184,7 +188,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 minusActionPerformed(evt);
             }
         });
-        getContentPane().add(minus, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 60, 20));
+        getContentPane().add(minus, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 60, 20));
 
         point.setText(".");
         point.addActionListener(new java.awt.event.ActionListener() {
@@ -192,7 +196,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 pointActionPerformed1(evt);
             }
         });
-        getContentPane().add(point, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 218, 50, 30));
+        getContentPane().add(point, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 50, 30));
 
         power.setText("x^n");
         power.addActionListener(new java.awt.event.ActionListener() {
@@ -200,7 +204,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 powerActionPerformed(evt);
             }
         });
-        getContentPane().add(power, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 60, 20));
+        getContentPane().add(power, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 60, 20));
 
         divide.setText("/");
         divide.addActionListener(new java.awt.event.ActionListener() {
@@ -208,7 +212,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 divideActionPerformed(evt);
             }
         });
-        getContentPane().add(divide, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 60, 20));
+        getContentPane().add(divide, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 60, 20));
 
         riza.setText("sqrt");
         riza.addActionListener(new java.awt.event.ActionListener() {
@@ -216,11 +220,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 rizaActionPerformed(evt);
             }
         });
-        getContentPane().add(riza, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 60, 20));
+        getContentPane().add(riza, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 60, 20));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Calculator manmu");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 19, 140, 20));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 140, 20));
 
         back.setText("<--");
         back.addActionListener(new java.awt.event.ActionListener() {
@@ -228,7 +232,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 backActionPerformed(evt);
             }
         });
-        getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 54, 70, -1));
+        getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 50, -1));
 
         percent.setText("%");
         percent.addActionListener(new java.awt.event.ActionListener() {
@@ -236,7 +240,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 percentActionPerformed(evt);
             }
         });
-        getContentPane().add(percent, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 189, 60, 20));
+        getContentPane().add(percent, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 60, 20));
 
         sin.setText("sin");
         sin.addActionListener(new java.awt.event.ActionListener() {
@@ -244,7 +248,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 sinActionPerformed(evt);
             }
         });
-        getContentPane().add(sin, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 218, 60, 20));
+        getContentPane().add(sin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 60, 20));
 
         cos.setText("cos");
         cos.addActionListener(new java.awt.event.ActionListener() {
@@ -252,7 +256,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 cosActionPerformed(evt);
             }
         });
-        getContentPane().add(cos, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 218, 60, 20));
+        getContentPane().add(cos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 60, 20));
 
         tan.setText("tan");
         tan.addActionListener(new java.awt.event.ActionListener() {
@@ -260,7 +264,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 tanActionPerformed(evt);
             }
         });
-        getContentPane().add(tan, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 189, 60, 20));
+        getContentPane().add(tan, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 60, 20));
 
         log.setText("log");
         log.addActionListener(new java.awt.event.ActionListener() {
@@ -268,7 +272,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 logActionPerformed(evt);
             }
         });
-        getContentPane().add(log, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 249, 60, 20));
+        getContentPane().add(log, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 60, 20));
 
         ln.setText("ln");
         ln.addActionListener(new java.awt.event.ActionListener() {
@@ -276,7 +280,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 lnActionPerformed(evt);
             }
         });
-        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 59, 20));
+        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 59, 20));
 
         exp.setText("exp");
         exp.addActionListener(new java.awt.event.ActionListener() {
@@ -284,7 +288,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 expActionPerformed(evt);
             }
         });
-        getContentPane().add(exp, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 60, 20));
+        getContentPane().add(exp, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 60, 20));
 
         ntekakaintunamh.setText("10^x");
         ntekakaintunamh.addActionListener(new java.awt.event.ActionListener() {
@@ -292,7 +296,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 ntekakaintunamhActionPerformed(evt);
             }
         });
-        getContentPane().add(ntekakaintunamh, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 62, 20));
+        getContentPane().add(ntekakaintunamh, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 62, 20));
 
         pi.setText("π");
         pi.addActionListener(new java.awt.event.ActionListener() {
@@ -300,7 +304,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 piActionPerformed(evt);
             }
         });
-        getContentPane().add(pi, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 54, 60, -1));
+        getContentPane().add(pi, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 50, -1));
 
         multi.setText("*");
         multi.addActionListener(new java.awt.event.ActionListener() {
@@ -308,7 +312,29 @@ public class NewJFrame extends javax.swing.JFrame {
                 multiActionPerformed(evt);
             }
         });
-        getContentPane().add(multi, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 61, 20));
+        getContentPane().add(multi, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 61, 20));
+
+        jMenu1.setText("ΠΡΟΒΟΛΗ");
+
+        jMenuItem1.setText("ΤΥΠΙΚΗ");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setText("ΕΠΙΣΤΗΜΟΝΙΚΗ");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu1);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -518,6 +544,32 @@ public class NewJFrame extends javax.swing.JFrame {
         operation = "*";
     }//GEN-LAST:event_multiActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        riza.setVisible(false);
+        tan.setVisible(false);
+        log.setVisible(false);
+        ln.setVisible(false);
+        sin.setVisible(false);
+        exp.setVisible(false);
+        cos.setVisible(false);
+        ntekakaintunamh.setVisible(false);
+        percent.setVisible(false);
+        power.setVisible(false);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        riza.setVisible(true);
+        tan.setVisible(true);
+        log.setVisible(true);
+        ln.setVisible(true);
+        sin.setVisible(true);
+        exp.setVisible(true);
+        cos.setVisible(true);
+        ntekakaintunamh.setVisible(true);
+        percent.setVisible(true);
+        power.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -564,6 +616,10 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton five;
     private javax.swing.JButton four;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JTextField jtextfield1;
     private javax.swing.JButton ln;
     private javax.swing.JButton log;

@@ -26,4 +26,8 @@ public class Calculator {
     double Div(double x, double y) {
         return x / y;
     }
+    
+    double Power(double x, double y) {
+        return Math.pow(x,y);
+    }
 }

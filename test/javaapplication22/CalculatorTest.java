@@ -88,6 +88,17 @@ public class CalculatorTest {
         double result = instance.Div(x, y);
         
         assertEquals(expResult, result, 0.0);
+        
     }
-    
+    @Test
+    public void testPower() {
+        System.out.println("Power");
+        double x = 8;
+        double y = 2;
+        Calculator instance = new Calculator();
+        double expResult = 64;
+        double result = instance.Power(x, y);
+        
+        assertEquals(expResult, result, 0.0);
+} 
 }

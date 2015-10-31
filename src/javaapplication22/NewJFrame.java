@@ -393,12 +393,12 @@ public class NewJFrame extends javax.swing.JFrame {
 		break;
          case "^" :    
                 secondnum=Double.parseDouble(jtextfield1.getText());
-                result= Math.pow(firstnum,secondnum)   ;
+                result= calc.Pow(firstnum,secondnum)   ;
 		answer = Double.toString(result) ;
 		jtextfield1.setText(answer);					
 		break; 
          case "sqrt" :
-                result= Math.sqrt (firstnum) ;
+                result= calc.Sqrt(firstnum) ;
                 answer = Double.toString (result) ;
                 jtextfield1.setText(answer);
                 break;

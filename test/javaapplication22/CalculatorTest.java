@@ -89,5 +89,27 @@ public class CalculatorTest {
         
         assertEquals(expResult, result, 0.0);
     }
+    @Test
+    public void testpow(){
+        System.out.println("Pow");
+        double x=3;
+        double y=3;
+        Calculator instance = new Calculator();
+        double expResult= 27.0;
+        double result = instance.Pow(x, y);
+        
+        assertEquals(expResult,result,0.0);
+    }
+    @Test
+    public void testsqrt(){
+        System.out.println("Sqrt");
+        double x=9;
+        Calculator instance = new Calculator();
+        double expResult=3;
+        double result=instance.Sqrt(x);
+        assertEquals(expResult,result,0.0);
+        
+    }
     
 }
+

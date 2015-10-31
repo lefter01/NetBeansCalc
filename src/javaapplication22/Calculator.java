@@ -26,4 +26,11 @@ public class Calculator {
     double Div(double x, double y) {
         return x / y;
     }
+    double Pow(double x,double y){
+        return Math.pow(x, y);
+    }
+    double Sqrt(double x){
+        return Math.sqrt(x);
+    }
+   
 }

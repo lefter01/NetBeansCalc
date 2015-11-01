@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package javaapplication22;
 
 import org.junit.After;
@@ -12,10 +8,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Johnpe
- */
+
 public class CalculatorTest {
     
     public CalculatorTest() {
@@ -42,22 +35,25 @@ public class CalculatorTest {
      */
     @Test
     public void testAdd() {
-        System.out.println("Add");
-        double x = 5;
-        double y = 12;
+      System.out.println("Add");
+      for(int i=-1;i<=1;i=i+1)
+      {
+        double x = 5*i;
+        double y = 12*i;
         Calculator instance = new Calculator();
-        double expResult = 17;
+        double expResult = 17*i;
         double result = instance.Add(x, y);
         
         assertEquals(expResult, result, 0);
+      }
         
-        x = -12;
+      /*  x = -12;
         y = -5;
         expResult = -17;
         result = instance.Add(x, y);
         
         assertEquals(expResult, result, 0);
-    }
+    */}
 
     /**
      * Test of Sub method, of class Calculator.
@@ -71,7 +67,7 @@ public class CalculatorTest {
         double expResult = 10;
         double result = instance.Sub(x, y);
         
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result, 0);
     }
 
    
@@ -87,7 +83,7 @@ public class CalculatorTest {
         double expResult = 2.5;
         double result = instance.Div(x, y);
         
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result, 0);
     }
     @Test
     public void testpow(){
@@ -98,7 +94,7 @@ public class CalculatorTest {
         double expResult= 27.0;
         double result = instance.Pow(x, y);
         
-        assertEquals(expResult,result,0.0);
+        assertEquals(expResult, result, 0);
     }
     @Test
     public void testsqrt(){
@@ -107,7 +103,7 @@ public class CalculatorTest {
         Calculator instance = new Calculator();
         double expResult=3;
         double result=instance.Sqrt(x);
-        assertEquals(expResult,result,0.0);
+        assertEquals(expResult, result, 0);
         
     }
     /**
@@ -131,9 +127,9 @@ public class CalculatorTest {
         double expResult = 2.718281828459045;
         double result = Math.exp(x);
         
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result, 0);
         
-        x = -0;
+        x = 0;
         expResult = 1.0;
         result = Math.exp(x);
         
@@ -148,7 +144,70 @@ public class CalculatorTest {
         double expResult= 12.0;
         double result = instance.Mult(x, y);
         
-        assertEquals(expResult,result,0.0);
+        assertEquals(expResult, result, 0);
+    }
+    
+    @Test
+    public void testsin(){
+        System.out.println("Sin");
+        double x=90;
+        double expResult=0.8939966636005579;
+        double result=Math.sin(x);
+        assertEquals(expResult, result, 0);
+        
+        x = 0;
+        expResult =0;
+        result=Math.sin(x);
+        
+        assertEquals(expResult, result, 0);
+    }
+    
+    @Test
+    public void testcos(){
+        System.out.println("Cos");
+        double x=45;
+        double expResult=0.5253219888177297;
+        double result=Math.cos(x);
+        assertEquals(expResult, result, 0);
+        
+        x = 0;
+        expResult =1;
+        result=Math.cos(x);
+        
+        assertEquals(expResult, result, 0);
+    }
+    
+    @Test
+    public void testtan(){
+        System.out.println("Tan");
+        double x=30;
+        double expResult=-6.405331196646276;
+        double result=Math.tan(x);
+        assertEquals(expResult, result, 0);
+        
+        x = 0;
+        expResult =0;
+        result=Math.tan(x);
+        
+        assertEquals(expResult, result, 0);
+    }
+    
+    @Test
+    public void testlog(){
+        System.out.println("Log");
+        double x=2;
+        double expResult=0.3010299956639812;
+        double result=Math.log10(x);
+        assertEquals(expResult, result, 0);
+    }
+    
+    @Test
+    public void testln(){
+        System.out.println("Ln");
+        double x=1;
+        double expResult=0;
+        double result=Math.log(x);
+        assertEquals(expResult, result, 0);
     }
 }
 

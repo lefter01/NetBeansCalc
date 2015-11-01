@@ -72,7 +72,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         one.setText("1");
         one.addActionListener(new java.awt.event.ActionListener() {
@@ -80,7 +79,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 oneActionPerformed(evt);
             }
         });
-        getContentPane().add(one, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, 50, 30));
 
         two.setText("2");
         two.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +86,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 twoActionPerformed(evt);
             }
         });
-        getContentPane().add(two, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 50, 30));
 
         three.setText("3");
         three.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +93,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 threeActionPerformed(evt);
             }
         });
-        getContentPane().add(three, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 50, 30));
 
         four.setText("4");
         four.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +100,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 fourActionPerformed(evt);
             }
         });
-        getContentPane().add(four, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 50, 30));
 
         five.setText("5");
         five.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +107,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 fiveActionPerformed(evt);
             }
         });
-        getContentPane().add(five, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 50, 30));
 
         six.setText("6");
         six.addActionListener(new java.awt.event.ActionListener() {
@@ -120,7 +114,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 sixActionPerformed(evt);
             }
         });
-        getContentPane().add(six, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 190, 50, 30));
 
         seven.setText("7");
         seven.addActionListener(new java.awt.event.ActionListener() {
@@ -128,7 +121,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 sevenActionPerformed(evt);
             }
         });
-        getContentPane().add(seven, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 50, 30));
 
         eight.setText("8");
         eight.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +128,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 eightActionPerformed(evt);
             }
         });
-        getContentPane().add(eight, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 50, 30));
 
         nine.setText("9");
         nine.addActionListener(new java.awt.event.ActionListener() {
@@ -144,7 +135,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 nineActionPerformed(evt);
             }
         });
-        getContentPane().add(nine, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 50, 30));
 
         zero.setText("0");
         zero.addActionListener(new java.awt.event.ActionListener() {
@@ -152,7 +142,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 zeroActionPerformed(evt);
             }
         });
-        getContentPane().add(zero, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 50, 30));
 
         plus.setText("+");
         plus.addActionListener(new java.awt.event.ActionListener() {
@@ -160,7 +149,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 plusActionPerformed(evt);
             }
         });
-        getContentPane().add(plus, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 50, 20));
 
         equal.setText("=");
         equal.addActionListener(new java.awt.event.ActionListener() {
@@ -168,11 +156,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 equalActionPerformed(evt);
             }
         });
-        getContentPane().add(equal, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 50, 30));
 
         jtextfield1.setEditable(false);
         jtextfield1.setBackground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(jtextfield1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 190, 30));
 
         clear.setText("C");
         clear.addActionListener(new java.awt.event.ActionListener() {
@@ -180,7 +166,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 clearActionPerformed(evt);
             }
         });
-        getContentPane().add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 60, 70));
 
         minus.setLabel("-");
         minus.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +173,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 minusActionPerformed(evt);
             }
         });
-        getContentPane().add(minus, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 60, 20));
 
         point.setText(".");
         point.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +180,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 pointActionPerformed1(evt);
             }
         });
-        getContentPane().add(point, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 50, 30));
 
         power.setText("x^n");
         power.addActionListener(new java.awt.event.ActionListener() {
@@ -204,7 +187,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 powerActionPerformed(evt);
             }
         });
-        getContentPane().add(power, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 60, 20));
 
         divide.setText("/");
         divide.addActionListener(new java.awt.event.ActionListener() {
@@ -212,7 +194,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 divideActionPerformed(evt);
             }
         });
-        getContentPane().add(divide, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 60, 20));
 
         riza.setText("sqrt");
         riza.addActionListener(new java.awt.event.ActionListener() {
@@ -220,11 +201,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 rizaActionPerformed(evt);
             }
         });
-        getContentPane().add(riza, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 60, 20));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Calculator manmu");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 140, 20));
 
         back.setText("<--");
         back.addActionListener(new java.awt.event.ActionListener() {
@@ -232,7 +211,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 backActionPerformed(evt);
             }
         });
-        getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, 50, -1));
 
         percent.setText("%");
         percent.addActionListener(new java.awt.event.ActionListener() {
@@ -240,7 +218,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 percentActionPerformed(evt);
             }
         });
-        getContentPane().add(percent, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 60, 20));
 
         sin.setText("sin");
         sin.addActionListener(new java.awt.event.ActionListener() {
@@ -248,7 +225,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 sinActionPerformed(evt);
             }
         });
-        getContentPane().add(sin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 60, 20));
 
         cos.setText("cos");
         cos.addActionListener(new java.awt.event.ActionListener() {
@@ -256,7 +232,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 cosActionPerformed(evt);
             }
         });
-        getContentPane().add(cos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 60, 20));
 
         tan.setText("tan");
         tan.addActionListener(new java.awt.event.ActionListener() {
@@ -264,7 +239,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 tanActionPerformed(evt);
             }
         });
-        getContentPane().add(tan, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 60, 20));
 
         log.setText("log");
         log.addActionListener(new java.awt.event.ActionListener() {
@@ -272,7 +246,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 logActionPerformed(evt);
             }
         });
-        getContentPane().add(log, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 60, 20));
 
         ln.setText("ln");
         ln.addActionListener(new java.awt.event.ActionListener() {
@@ -280,7 +253,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 lnActionPerformed(evt);
             }
         });
-        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 59, 20));
 
         exp.setText("exp");
         exp.addActionListener(new java.awt.event.ActionListener() {
@@ -288,7 +260,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 expActionPerformed(evt);
             }
         });
-        getContentPane().add(exp, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 60, 20));
 
         ntekakaintunamh.setText("10^x");
         ntekakaintunamh.addActionListener(new java.awt.event.ActionListener() {
@@ -296,7 +267,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 ntekakaintunamhActionPerformed(evt);
             }
         });
-        getContentPane().add(ntekakaintunamh, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 62, 20));
 
         pi.setText("π");
         pi.addActionListener(new java.awt.event.ActionListener() {
@@ -304,7 +274,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 piActionPerformed(evt);
             }
         });
-        getContentPane().add(pi, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 50, -1));
 
         multi.setText("*");
         multi.addActionListener(new java.awt.event.ActionListener() {
@@ -312,7 +281,6 @@ public class NewJFrame extends javax.swing.JFrame {
                 multiActionPerformed(evt);
             }
         });
-        getContentPane().add(multi, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 61, 20));
 
         jMenu1.setText("ΠΡΟΒΟΛΗ");
 
@@ -335,6 +303,143 @@ public class NewJFrame extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(200, 200, 200)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(170, 170, 170)
+                        .addComponent(jtextfield1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(riza, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(power, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(pi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(plus, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(minus, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(tan, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(percent, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(one, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(two, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(three, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(divide, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(sin, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(log, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(exp, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cos, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ln, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ntekakaintunamh, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(8, 8, 8)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(four, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(seven, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(zero, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(five, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(eight, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(point, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(six, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nine, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(equal, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(multi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jtextfield1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pi)
+                    .addComponent(back)
+                    .addComponent(plus, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(minus, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(riza, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(power, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tan, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(percent, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(one, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(two, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(three, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(divide, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(sin, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(log, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(exp, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(cos, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(ln, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(ntekakaintunamh, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(four, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(seven, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(zero, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(five, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(eight, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(point, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(six, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(nine, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(equal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(multi, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -498,13 +603,13 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void sinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinActionPerformed
         firstnum = Double.parseDouble(jtextfield1.getText());
-        result= Math.sin(Math.toRadians(firstnum));
+        result= Math.sin(firstnum);
         jtextfield1.setText(Double.toString(result));
     }//GEN-LAST:event_sinActionPerformed
 //cos function 
     private void cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosActionPerformed
         firstnum = Double.parseDouble(jtextfield1.getText());
-        result= Math.cos(Math.toRadians(firstnum));
+        result= Math.cos(firstnum);
         jtextfield1.setText(Double.toString(result));
     }//GEN-LAST:event_cosActionPerformed
 
@@ -515,7 +620,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tanActionPerformed
         firstnum = Double.parseDouble(jtextfield1.getText());
-        result= Math.tan(Math.toRadians(firstnum));
+        result= Math.tan(firstnum);
         jtextfield1.setText(Double.toString(result));
     }//GEN-LAST:event_tanActionPerformed
 

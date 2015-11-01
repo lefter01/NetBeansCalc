@@ -38,5 +38,7 @@ public class Calculator {
     double Exp(double x){
         return Math.exp(x);
     }
+  
+  }
    
-}
+

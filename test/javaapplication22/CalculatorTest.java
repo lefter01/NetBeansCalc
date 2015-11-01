@@ -139,6 +139,16 @@ public class CalculatorTest {
         
         assertEquals(expResult, result, 0);
     }
-    
+    @Test
+    public void testMult() {
+        System.out.println("Mult");
+        double x=3;
+        double y=4;
+        Calculator instance = new Calculator();
+        double expResult= 12.0;
+        double result = instance.Mult(x, y);
+        
+        assertEquals(expResult,result,0.0);
+    }
 }
 
